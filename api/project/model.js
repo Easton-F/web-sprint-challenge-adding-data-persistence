@@ -2,7 +2,8 @@
 const db = require('../../data/dbConfig')
 
 function getAllProjects() {
-    return db('projects')
+    return db('projects as pj')
+        .select('pj.*')
 }
 
 module.exports = {
