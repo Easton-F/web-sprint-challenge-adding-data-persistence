@@ -23,4 +23,5 @@ function getProjectById(id) {
 module.exports = {
     getAllProjects,
     addNewProject,
+    getProjectById,
 }
